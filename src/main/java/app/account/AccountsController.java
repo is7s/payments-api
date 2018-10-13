@@ -27,12 +27,12 @@ public class AccountsController {
         accountDao.getAccountById(RequestUtil.getAccountId(request)).getBalance().toString();
 
     public Route addMoneyToAccount = (Request request, Response response) -> {
-        accountDao.addMoneyToAccount(RequestUtil.getAccountId(request), RequestUtil.getAddAmount(request));
+        accountDao.addMoneyToAccount(RequestUtil.getAccountId(request), RequestUtil.getAmount(request));
         return "Done";
     };
 
     public Route removeMoneyFromAccount = (Request request, Response response) -> {
-        accountDao.addMoneyToAccount(RequestUtil.getAccountId(request), RequestUtil.getAddAmount(request));
+        accountDao.addMoneyToAccount(RequestUtil.getAccountId(request), RequestUtil.getAmount(request));
         return "Done";
     };
 

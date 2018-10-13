@@ -23,8 +23,8 @@ public class RequestUtil {
         return Double.parseDouble(request.queryParams("balance"));
     }
 
-    public static double getAddAmount(Request request) {
-        return Double.parseDouble(request.queryParams("addAmount"));
+    public static double getAmount(Request request) {
+        return Double.parseDouble(request.queryParams("amount"));
     }
 
 }
