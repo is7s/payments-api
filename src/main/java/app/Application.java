@@ -17,8 +17,8 @@ public class Application {
     public static void main(String[] args) {
         post("add_account", accountsController.addAccount);
         post("remove_account", accountsController.removeAccount);
-        put("add_money", accountsController.addMoneyToAccount);
-        put("remove_money", accountsController.removeMoneyFromAccount);
+        post("add_money", accountsController.addMoneyToAccount);
+        post("remove_money", accountsController.removeMoneyFromAccount);
         post("transfer", transfersController.makeTransfer);
         get("get_balance", accountsController.getBalance);
 
